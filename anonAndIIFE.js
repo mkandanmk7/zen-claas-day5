@@ -191,3 +191,26 @@ let rotate = function (value, k) {
 }
 
 console.log(rotate([1, 2, 3], 2)); //[2,3,1]
+
+
+//7.return median:
+
+//anonymous();
+let mid = function (arr1, arr2) {
+  arr1.sort((a, b) => a - b);
+  arr2.sort((a, b) => a - b);
+  console.log(arr1[parseInt(arr1.length / 2)]); // 3
+  console.log(arr2[parseInt(arr2.length / 2)]); // 34
+}
+mid([3, 2, 1, 5, 4], [56, 34, 223, 23, 1]);
+
+//IIFE ();
+(function (arr1, arr2) {
+  arr1.sort((a, b) => a - b);
+  arr2.sort((a, b) => a - b);
+  console.log(arr1[parseInt(arr1.length / 2)]); 
+  console.log(arr2[parseInt(arr2.length / 2)]); 
+})
+  (mid([3, 2, 1, 5, 4], [56, 34, 223, 23, 1]))
+
+
